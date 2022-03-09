@@ -22,7 +22,7 @@ body {
     justify-content: space-between;
     padding: 0 100px 0 100px;
     border-bottom: 1px solid var(--border-color);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     background-color: var(--navigation-background);
 }
 
@@ -39,20 +39,20 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    padding: 10px 10px 8px 10px;
+    padding: 8px 10px 7px 10px;
     border-radius: 3px;
     background-color: var(--search-color);
 }
 
 #logo {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
     color: var(--linkenin-logo);
 }
 
 #search input {
     width: 300px;
     border: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     background-color: var(--search-color);
 }
 
@@ -61,7 +61,7 @@ body {
 }
 
 #search i {
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 
 #right {
@@ -80,7 +80,7 @@ body {
 
 .alignment i {
     color: var(--icon-color);
-    font-size: 3rem;
+    font-size: 2.2rem;
 }
 
 .alignment p {
@@ -97,14 +97,14 @@ body {
 }
 
 #message p, #notifications p {
-    margin-block: -3px;
+    margin-block: -2px;
 }
 
 #account p, #work p {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block: -7px;
+    margin-block: -12px;
 }
 
 #account p i, #work p i {
@@ -141,7 +141,7 @@ body {
     }
     
     #search i {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .alignment p {
