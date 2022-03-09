@@ -7,6 +7,7 @@
     --premium-color: #9b6912;
     --body-background: #e8e2e2; 
     --navigation-background: #ffffff;
+    --border-color: #0000002b;
 }
 
 body {
@@ -19,8 +20,8 @@ body {
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding: 12px 100px 12px 100px;
-    border-bottom: 1px solid #0000002b;
+    padding: 0 100px 0 100px;
+    border-bottom: 1px solid var(--border-color);
     font-size: 1.3rem;
     background-color: var(--navigation-background);
 }
@@ -30,6 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-block: 8px;
 }
 
 #search {
@@ -73,6 +75,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 5px;   
+    padding-block: 8px;
 }
 
 .alignment i {
@@ -93,6 +96,10 @@ body {
     color: var(--icon-active);
 }
 
+#message p, #notifications p {
+    margin-block: -3px;
+}
+
 #account p, #work p {
     display: flex;
     align-items: center;
@@ -102,6 +109,13 @@ body {
 
 #account p i, #work p i {
     font-size: 2.4rem;
+}
+
+.seperate {
+    display: flex;
+    gap: 20px;
+    padding-left: 20px;
+    border-left: 1px solid var(--border-color);
 }
 
 #premium {

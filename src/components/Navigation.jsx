@@ -23,7 +23,7 @@ export default function NavBar() {
                     <p>Jobs</p>
                 </div>
                 <div id="message" className="alignment">
-                    <i className="material-icons">comment</i>
+                    <i className="material-icons">mode_comment</i>
                     <p>Messaging</p>
                 </div>
                 <div id="notifications" className="alignment">
@@ -34,13 +34,15 @@ export default function NavBar() {
                     <i className="material-icons">account_circle</i>
                     <p>Me  <i className="material-icons">arrow_drop_down</i></p>
                 </div>
-                <div id="work" className="alignment">
-                    <i className="material-icons">apps</i>
-                    <p>Work <i className="material-icons">arrow_drop_down</i></p>
-                </div>
-                <div id="premium" className="alignment">
-                    <p>Reactivate</p>
-                    <p>Premium</p>
+                <div className="seperate">
+                    <div id="work" className="alignment">
+                        <i className="material-icons">apps</i>
+                        <p>Work <i className="material-icons">arrow_drop_down</i></p>
+                    </div>
+                    <div id="premium" className="alignment">
+                        <p>Reactivate</p>
+                        <p>Premium</p>
+                    </div>
                 </div>
             </div>
             
