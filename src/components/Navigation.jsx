@@ -32,11 +32,11 @@ export default function NavBar() {
                 </div>
                 <div id="account" className="alignment">
                     <i className="material-icons">account_circle</i>
-                    <p>Me</p>
+                    <p>Me  <i className="material-icons">arrow_drop_down</i></p>
                 </div>
                 <div id="work" className="alignment">
                     <i className="material-icons">apps</i>
-                    <p>Work</p>
+                    <p>Work <i className="material-icons">arrow_drop_down</i></p>
                 </div>
                 <div id="premium" className="alignment">
                     <p>Reactivate</p>

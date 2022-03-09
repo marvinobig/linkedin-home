@@ -1,8 +1,10 @@
 * {
+    box-sizing: border-box;
     --linkenin-logo: #007bb5;
     --search-color: #e3dede;
     --icon-color: #313335;
     --icon-active: #000000;
+    --premium-color: #9b6912;
     --body-background: #e8e2e2; 
     --navigation-background: #ffffff;
 }
@@ -17,7 +19,7 @@ body {
 .navigation {
     display: flex;
     justify-content: space-between;
-    padding: 12px 20px 12px 20px;
+    padding: 12px 100px 12px 100px;
     border-bottom: 1px solid #0000002b;
     font-size: 1.3rem;
     background-color: var(--navigation-background);
@@ -27,7 +29,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
 }
 
 #search {
@@ -91,7 +93,27 @@ body {
     color: var(--icon-active);
 }
 
-@media only screen and (max-width: 1200px) {
+#account p, #work p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: -7px;
+}
+
+#account p i, #work p i {
+    font-size: 2.4rem;
+}
+
+#premium {
+    color: var(--premium-color);
+}
+
+
+@media only screen and (max-width: 1500px) {
+    .navigation {
+        padding: 12px 25px 12px 25px;
+    }
+
     #left {
         gap: 12px;
     }
@@ -114,5 +136,9 @@ body {
 
     #premium p {
         display: block;
+    }
+
+    #account p, #work p {
+        display: none;
     }
 }
