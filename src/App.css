@@ -1,0 +1,35 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px 5px 50px;
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px 5px 10px;
+    border-radius: 3px;
+    background-color: #d3d3d3;
+}
+
+#logo {
+    font-size: 2.4rem;
+}
+
+#search input {
+    border: none;
+    background-color: #d3d3d3;
+}
+
+#right {
+    display: flex;
+    gap: 30px;
+}
