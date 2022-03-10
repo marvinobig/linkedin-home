@@ -3,9 +3,10 @@ export default function UserCard() {
         <section id="user-card">
             <div className="user-cover"></div>
             <div className="user"></div>
-            <p>Marv Obig</p>
-            <p>Frontend Developer</p>
-            <hr />
+            <div id="user-title">
+                <p>Marv Obig</p>
+                <p>Frontend Developer</p>
+            </div>
             <div id="connections">
                 <div id="current-connections">
                     <p>Connections</p>

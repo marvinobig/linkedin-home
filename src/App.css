@@ -20,7 +20,7 @@ body {
 .app-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+    grid-template-columns: 100px 2.2fr 4fr 3fr 100px;
     grid-template-rows: 80px 1fr repeat(4, 1fr);
     gap: 20px;
 }
@@ -30,9 +30,10 @@ body {
     grid-column: 1 / 6;
     display: flex;
     justify-content: space-between;
-    padding: 0 100px 0 100px;
+    padding-left: 125px;
+    padding-right: 125px;
     border-bottom: 1px solid var(--border-color);
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     background-color: var(--navigation-background);
 }
 
@@ -51,18 +52,19 @@ body {
     width: auto;
     padding: 8px 10px 7px 10px;
     border-radius: 3px;
+    margin-right: 40px;
     background-color: var(--search-color);
 }
 
 #logo {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
     color: var(--linkenin-logo);
 }
 
 #search input {
-    width: 300px;
+    width: 100%;
     border: none;
-    font-size: 1.2rem;
+    font-size: 1rem;
     background-color: var(--search-color);
 }
 
@@ -71,7 +73,7 @@ body {
 }
 
 #search i {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 #right {
@@ -90,7 +92,7 @@ body {
 
 .alignment i {
     color: var(--icon-color);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 }
 
 .alignment p {
@@ -114,11 +116,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-block: -12px;
+    margin-block: -8px;
 }
 
 #account p i, #work p i {
-    font-size: 2.4rem;
+    font-size: 2rem;
 }
 
 .seperate {
@@ -135,13 +137,12 @@ body {
 /* post add section */
 #post-add {
     grid-column: 3 / 4;
-    place-self: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 5px;
-    height: 100%;
+    height: fit-content;
     width: 100%;
     padding: 10px;
     background-color: var(--navigation-background);
@@ -153,6 +154,8 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: 100%;
+    flex: 1 1 auto;
 }
 
 #post i {
@@ -162,7 +165,8 @@ body {
 #write-post {
     display: flex;
     align-items: center;
-    width: 320px;
+    width: 100%;
+    flex: 1 1 auto;
     padding: 10px;
     border-radius: 10rem;
     border: 1px solid var(--border-color);
@@ -178,7 +182,9 @@ body {
 
 #post-actions {
     display: flex;
+    justify-content: space-around;
     align-items: center;
+    width: 100%;
     gap: 10px;
 }
 
@@ -192,11 +198,93 @@ body {
 #user-card {
     grid-column: 2 / 3;
     grid-row: 2 / 5;
-    place-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    background-color: var(--navigation-background);
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+}
+
+.user-cover {
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 9px 9px 0 0;
+}
+
+.user {
+    height: 80px;
+    width: 80px;
+    position: relative;
+    bottom: 40px;
+    background-color: #313335;
+    border: 2px solid var(--navigation-background);
+    border-radius: 50%;
+}
+
+#user-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+#user-title p {
+    margin: 5px;
+}
+
+#connections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+
+#connections p {
+    margin: 12px 5px 5px 5px;
+}
+
+#current-connections {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--border-color);
+}
+
+.extra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px;
+}
+
+#exclusive {
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+}
+
+#items {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 10px;
+    border-top: 1px solid var(--border-color);
+}
+
+
+/* news */
+#news {
+    grid-column: 4 / 5;
+    grid-row: 2 / 5;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
     width: 100%;
     padding: 10px;
     background-color: var(--navigation-background);
@@ -204,49 +292,42 @@ body {
     border-radius: 9px;
 }
 
-#connections {
+#title {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-}
-
-#current-connections {
-    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-@media only screen and (max-width: 1600px) {
-    .navigation {
-        padding: 12px 25px 12px 25px;
-    }
+.item p {
+    margin: 0;
+}
 
-    #left {
-        gap: 12px;
-    }
+.list {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
 
-    #search {
-        background-color: #ffffff;
-    }
-    
-    #search input {
-        display: none;
-    }
-    
-    #search i {
-        font-size: 2.4rem;
-    }
+.list i {
+    font-size: 0.8rem;
+    font-weight: 900;
+}
 
-    .alignment p {
-        display: none;
-    }
+.item > p {
+    padding-left: 19px;
+}
 
-    #premium p {
-        display: block;
-    }
-
-    #account p, #work p {
-        display: none;
-    }
+.show-more {
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
