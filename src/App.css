@@ -320,6 +320,7 @@ body {
 .list i {
     font-size: 0.8rem;
     font-weight: 900;
+    margin-top: -15px;
 }
 
 .item > p {
@@ -330,4 +331,5 @@ body {
     display: flex;
     align-items: center;
     padding: 10px;
+    margin-bottom: -30px;
 }
