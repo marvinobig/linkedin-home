@@ -12,7 +12,9 @@ export default function UserCard() {
                     <p id="num-of-connections">15</p>
                 </div>
                 <p>Grow your network</p>
-                <div id="views">
+            </div>
+            <div className="extra">
+                <div id="exclusive">
                     <p>Exclusive tools & insights</p>
                     <p>Reactivate premium</p>
                 </div>
