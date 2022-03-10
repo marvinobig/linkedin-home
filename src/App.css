@@ -22,8 +22,6 @@ body {
     display: grid;
     grid-template-columns: 100px 2.2fr 4.5fr 3fr 100px;
     grid-template-rows: 80px 1fr repeat(4, 1fr);
-    position: sticky;
-    top: 0;
     gap: 20px;
 }
 
@@ -32,6 +30,8 @@ body {
     grid-column: 1 / 6;
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
     padding-left: 125px;
     padding-right: 125px;
     border-bottom: 1px solid var(--border-color);
