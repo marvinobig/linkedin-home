@@ -20,13 +20,14 @@ body {
 .app-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
     grid-template-rows: 80px 1fr repeat(4, 1fr);
+    gap: 20px;
 }
 
 /* navigation */
 .navigation {
-    grid-column: 1 / 4;
+    grid-column: 1 / 6;
     display: flex;
     justify-content: space-between;
     padding: 0 100px 0 100px;
@@ -133,14 +134,15 @@ body {
 
 /* post add section */
 #post-add {
-    grid-column: 2 / 3;
+    grid-column: 3 / 4;
+    place-self: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
-    width: 400px;
-    margin: 10px;
+    height: 100%;
+    width: 100%;
     padding: 10px;
     background-color: var(--navigation-background);
     border: 1px solid var(--border-color);
@@ -185,6 +187,35 @@ body {
     align-items: center;
     gap: 6px;
 }
+
+/* user card */
+#user-card {
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    place-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--navigation-background);
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+}
+
+#connections {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#current-connections {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 1600px) {
     .navigation {
