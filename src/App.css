@@ -21,7 +21,7 @@ body {
     height: 100vh;
     display: grid;
     grid-template-columns: 100px 2.2fr 4.5fr 3fr 100px;
-    grid-template-rows: 80px 1fr repeat(4, 1fr);
+    grid-template-rows: auto 1fr repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -30,8 +30,10 @@ body {
     grid-column: 1 / 6;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: sticky;
     top: 0;
+    z-index: 6;
     padding-left: 125px;
     padding-right: 125px;
     border-bottom: 1px solid var(--border-color);
@@ -43,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: fit-content;
     gap: 10px;
     padding-block: 4px;
 }
@@ -88,6 +91,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: fit-content;
     gap: 5px;   
     padding-block: 4px;
 }
@@ -108,10 +112,6 @@ body {
 
 #home i {
     color: var(--icon-active);
-}
-
-#message p, #notifications p {
-    margin-block: -2px;
 }
 
 #account p, #work p {
