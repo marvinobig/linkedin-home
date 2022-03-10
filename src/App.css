@@ -20,7 +20,7 @@ body {
 .app-container {
     height: 100vh;
     display: grid;
-    grid-template-columns: 100px 2.2fr 4fr 3fr 100px;
+    grid-template-columns: 100px 2.2fr 4.5fr 3fr 100px;
     grid-template-rows: 80px 1fr repeat(4, 1fr);
     gap: 20px;
 }
@@ -42,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-block: 8px;
+    padding-block: 4px;
 }
 
 #search {
@@ -50,7 +50,7 @@ body {
     justify-content: center;
     align-items: center;
     width: auto;
-    padding: 8px 10px 7px 10px;
+    padding: 6px 10px 5px 10px;
     border-radius: 3px;
     margin-right: 40px;
     background-color: var(--search-color);
@@ -87,12 +87,12 @@ body {
     align-items: center;
     justify-content: center;
     gap: 5px;   
-    padding-block: 8px;
+    padding-block: 4px;
 }
 
 .alignment i {
     color: var(--icon-color);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .alignment p {
@@ -120,7 +120,7 @@ body {
 }
 
 #account p i, #work p i {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .seperate {
@@ -144,7 +144,7 @@ body {
     gap: 5px;
     height: fit-content;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
     background-color: var(--navigation-background);
     border: 1px solid var(--border-color);
     border-radius: 9px;
@@ -192,6 +192,7 @@ body {
     display: flex;
     align-items: center;
     gap: 6px;
+    margin-block: 8px;
 }
 
 /* user card */
