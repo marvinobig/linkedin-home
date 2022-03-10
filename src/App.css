@@ -11,13 +11,22 @@
 }
 
 body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: var(--body-background);
 }
 
+.app-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 80px 1fr repeat(4, 1fr);
+}
+
 /* navigation */
 .navigation {
+    grid-column: 1 / 4;
     display: flex;
     justify-content: space-between;
     padding: 0 100px 0 100px;
