@@ -342,7 +342,7 @@ body {
 }
 
 /* post */
-#post {
+#post-card {
     grid-column: 3 / 4;
     grid-row: 3 / 8;
     width: 100%;
