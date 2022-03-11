@@ -344,7 +344,6 @@ body {
 /* post */
 #post-card {
     grid-column: 3 / 4;
-    /* grid-row: 3 / 6; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
