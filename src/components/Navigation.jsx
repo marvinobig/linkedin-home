@@ -23,7 +23,7 @@ export default function NavBar() {
                     <p>Jobs</p>
                 </div>
                 <div id="message" className="alignment">
-                    <i className="material-icons">mode_comment</i>
+                    <i className="material-icons">textsms</i>
                     <p>Messaging</p>
                 </div>
                 <div id="notifications" className="alignment">
