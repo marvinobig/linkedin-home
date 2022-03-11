@@ -340,3 +340,14 @@ body {
     padding: 10px;
     margin-bottom: -30px;
 }
+
+/* post */
+#post {
+    grid-column: 3 / 4;
+    grid-row: 3 / 8;
+    width: 100%;
+    padding: 10px 10px 5px 10px;
+    background-color: var(--navigation-background);
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+}
