@@ -1,13 +1,11 @@
-import PostImg from "../media/linkedin-react.png";
-
-export default function Post() {
+export default function Post(props) {
     return (
         <section id="post-card">
             <div className="user-post">
                 <div className="user-icon">
                     <i className="material-icons">account_circle</i>
                     <div className="user-info">
-                        <p>Marv Obig</p>
+                        <p>{props.user}</p>
                         <p className="followers">17 followers</p>
                         <p className="posted">19h <i className="material-icons">public</i></p>
                     </div>
@@ -17,13 +15,11 @@ export default function Post() {
                 </div>
             </div>
 
-            <p className="post-text">Day 9 & 10 of #100daysofcode:
-                Nearly finished my take on recreating LinkedIn's home feed. 
-                Doesn't look to bad so far. Just need to add two more cards 
-                and then I can focus on rendering posts through an array with #Reactjs.
+            <p className="post-text">
+                {props.text}
             </p>
 
-            <img src={PostImg} alt="" className="post-img" />
+            <img src={props.img} alt="" className="post-img" />
 
             <div className="user-actions">
                 <div className="action">
