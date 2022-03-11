@@ -13,6 +13,8 @@ export default function App() {
             <UserCard />
             <News />
             <Post />
+            <Post />
+            <Post />
         </div>
     )
 }
