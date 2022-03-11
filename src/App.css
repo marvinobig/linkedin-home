@@ -344,10 +344,73 @@ body {
 /* post */
 #post-card {
     grid-column: 3 / 4;
-    grid-row: 3 / 8;
+    grid-row: 3 / 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
     width: 100%;
-    padding: 10px 10px 5px 10px;
     background-color: var(--navigation-background);
     border: 1px solid var(--border-color);
     border-radius: 9px;
+}
+
+.user-actions {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-top: 1px solid var(--border-color);
+    margin-top: 20px;
+    padding: 10px 10px 5px 10px;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-post {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 5px 10px;
+}
+
+.user-icon {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.user-icon i {
+    font-size: 3.5rem;
+}
+
+.user-info p {
+    margin: 0;
+}
+
+.followers {
+    font-size: 0.8rem;
+}
+
+.posted {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+.posted i {
+    font-size: 0.8rem;
+}
+
+.post-img {
+    height: auto;
+    width: 100%;
+}
+
+.post-text {
+    padding: 10px 10px 5px 10px;
 }
