@@ -33,7 +33,7 @@ body {
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 6;
+    z-index: 1;
     padding-left: 125px;
     padding-right: 125px;
     border-bottom: 1px solid var(--border-color);
@@ -357,11 +357,10 @@ body {
 
 .user-actions {
     display: flex;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-between;
     border-top: 1px solid var(--border-color);
     margin-top: 20px;
-    padding: 10px 10px 5px 10px;
+    padding: 10px 20px 5px 20px;
 }
 
 .action {
