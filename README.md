@@ -33,3 +33,21 @@ You give the prop a name within the component pareanthesis. This would then allo
 5. What data type is `props` when the component receives it?
 
 Props are object data types.
+
+6. What does the `.map()` array method do?
+
+It takes each element of an array, applies a function to it and then returns the altered 
+values in a new array.
+
+
+7. What do we usually use `.map()` for in React?
+
+We use it to render each element of a .map array into a component 
+and render multiple instances of the component.
+
+
+8. Why is using `.map()` better than just creating the components
+   manually by typing them out?
+   
+It allows for the dynamic rendering of components to the raect DOM 
+without hardcoding everything.
