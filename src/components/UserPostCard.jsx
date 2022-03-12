@@ -1,5 +1,3 @@
-
-
 export default function Post(props) {
     return (
         <section id="post-card">
