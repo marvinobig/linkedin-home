@@ -31,7 +31,7 @@ const POST = [
     text: "Skills a fullstack JavaScript developer needs to have",
     img: "",
     followers: 100000
-  },
+  }
 ];
 
 const PostData = POST.map((post) => {
