@@ -17,14 +17,17 @@ export default function App() {
                 user = "Marv Obig"
                 text = "This is my first post. I am a react developer"
                 img = {img}
+                followers = {20}
             />
             <Post 
                 user = "Sim Bai"
                 text = "I am small and very cute but one thing that mes me annoyed is when people pay too much attention to my height"
+                followers = {40}
             />
             <Post 
                 user = "DatOne"
-                text = "SOmetimes, I lie awake at night to listen to my next door neighbours eating."
+                text = "Sometimes, I lie awake at night to listen to my next door neighbours eating."
+                followers = {1}
             />
         </div>
     )

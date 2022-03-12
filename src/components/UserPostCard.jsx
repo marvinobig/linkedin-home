@@ -6,7 +6,7 @@ export default function Post(props) {
                     <i className="material-icons">account_circle</i>
                     <div className="user-info">
                         <p>{props.user}</p>
-                        <p className="followers">17 followers</p>
+                        <p className="followers">{props.followers} Followers</p>
                         <p className="posted">19h <i className="material-icons">public</i></p>
                     </div>
                 </div>
