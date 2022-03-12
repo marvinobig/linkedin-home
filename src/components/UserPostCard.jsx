@@ -1,3 +1,5 @@
+
+
 export default function Post(props) {
     return (
         <section id="post-card">
@@ -19,7 +21,7 @@ export default function Post(props) {
                 {props.text}
             </p>
 
-            <img src={props.img} alt="" className="post-img" />
+            <img src={`../media/${props.img}`} alt="" className="post-img" />
 
             <div className="user-actions">
                 <div className="action">

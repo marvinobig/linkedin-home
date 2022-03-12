@@ -4,7 +4,6 @@ import StartPost from './components/StartPostCard';
 import UserCard from './components/UserCard';
 import News from './components/NewsCard';
 import Post from './components/UserPostCard';
-import img from './media/linkedin-react.png';
 
 export default function App() {
     return (
@@ -16,12 +15,13 @@ export default function App() {
             <Post 
                 user = "Marv Obig"
                 text = "This is my first post. I am a react developer"
-                img = {img}
+                img = "linkedin-react.png"
                 followers = {20}
             />
             <Post 
                 user = "Sim Bai"
-                text = "I am small and very cute but one thing that mes me annoyed is when people pay too much attention to my height"
+                text = "I am small and very cute but one thing that angers me is when people pay too much attention to my height"
+                img = "linkedin-guide-image.png"
                 followers = {40}
             />
             <Post 
