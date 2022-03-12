@@ -4,7 +4,7 @@ export default function StartPost() {
             <div id="post">
                 <i className="material-icons">account_circle</i>
                 <div id="write-post">
-                    <label for="post-input" className="material-icons">post_add</label>
+                    <label htmlFor="post-input" className="material-icons">post_add</label>
                     <input id="post-input" type="text" placeholder="Start a post"/>
                 </div>
             </div>
