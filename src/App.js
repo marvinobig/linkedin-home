@@ -4,6 +4,7 @@ import StartPost from "./components/StartPostCard";
 import UserCard from "./components/UserCard";
 import News from "./components/NewsCard";
 import {PostData} from "./postData";
+import ShowMore from "./components/ShowBtn";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
       <UserCard />
       <News />
       {PostData}
+      {PostData.length >= 5 && <ShowMore />}
     </div>
   );
 }
