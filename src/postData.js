@@ -38,10 +38,7 @@ const PostData = POST.map((post) => {
   return (
     <Post
       key={post.id}
-      user={post.user}
-      text={post.text}
-      img={post.img}
-      followers={post.followers}
+      post={post}
     />
   );
 });

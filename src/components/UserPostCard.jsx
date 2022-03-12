@@ -5,8 +5,8 @@ export default function Post(props) {
                 <div className="user-icon">
                     <i className="material-icons">account_circle</i>
                     <div className="user-info">
-                        <p>{props.user}</p>
-                        <p className="followers">{props.followers} Followers</p>
+                        <p>{props.post.user}</p>
+                        <p className="followers">{props.post.followers} Followers</p>
                         <p className="posted">19h <i className="material-icons">public</i></p>
                     </div>
                 </div>
@@ -16,10 +16,10 @@ export default function Post(props) {
             </div>
 
             <p className="post-text">
-                {props.text}
+                {props.post.text}
             </p>
 
-            <img src={`../media/${props.img}`} alt="" className="post-img" />
+            <img src={`../media/${props.post.img}`} alt="" className="post-img" />
 
             <div className="user-actions">
                 <div className="action">
