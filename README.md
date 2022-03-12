@@ -36,8 +36,7 @@ Props are object data types.
 
 6. What does the `.map()` array method do?
 
-It takes each element of an array, applies a function to it and then returns the altered 
-values in a new array.
+It takes each element of an array, applies a function to it and then returns the altered values in a new array.
 
 
 7. What do we usually use `.map()` for in React?
@@ -48,6 +47,6 @@ and render multiple instances of the component.
 
 8. Why is using `.map()` better than just creating the components
    manually by typing them out?
-   
+
 It allows for the dynamic rendering of components to the raect DOM 
 without hardcoding everything.
