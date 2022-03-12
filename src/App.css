@@ -241,6 +241,7 @@ body {
 }
 
 #user-title p {
+    text-align: center;
     margin: 5px;
 }
 
