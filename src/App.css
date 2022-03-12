@@ -413,3 +413,23 @@ body {
 .post-text {
     padding: 10px 10px 5px 10px;
 }
+
+/* show more button */
+#showMore {
+    grid-column: 3 / 4;
+    place-self: start center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 130px;
+    background-color: var(--navigation-background);
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+    transition: all ease-in 0.1s;
+}
+
+#showMore:hover {
+    transition: all ease-in 0.1s;
+    filter: brightness(80%);
+}
